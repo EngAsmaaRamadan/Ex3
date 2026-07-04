@@ -1,0 +1,221 @@
+#Exercise_01{
+	height: 100vh;
+	/*background-image: url(images/bg3_8907ec01.jpg);*//*why didnt work although using the correct path*/
+	background-image: url("https://semicode.tech/build/assets/bg3-8907ec01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#Exercise_02{
+	height: 100vh;
+	/*background-image: url(images/bg3_8907ec01.jpg);*/
+	background-image: url("https://semicode.tech/build/assets/bg3-8907ec01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#Exercise_01 .container{
+	background-color: #09c;
+	width: 300px;
+	height: 300px;
+	margin:auto;
+	margin-top: 50px;
+	position: relative;
+	overflow: hidden;
+}
+.container img{
+	width: 100%;
+	display: block;
+	transition-duration: 2s;
+	transition-delay: 2s;
+}
+#Exercise_01 .layout{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background-color: rgba(42, 63, 85, 0.5);
+	top: 0;
+	left: 0;
+	color: #fff;
+	text-align: center;
+	opacity: 0;
+	transition-duration: 2s;
+	overflow: hidden;
+}
+#Exercise_01 .layout h2{
+	padding: 10px 0px;
+	margin-bottom: 15px;
+	background-color:rgb(42, 63, 85);	
+}
+#Exercise_01 .layout p{
+	padding: 0px 20px;
+}
+#Exercise_01 .layout h2,
+#Exercise_01 .layout p{
+	transform: translateX(100%);
+	
+}
+#Exercise_01 .container:hover .layout h2,
+#Exercise_01 .container:hover .layout p{
+	transform: translateX(0%);
+	transition-duration: 2s;	
+}
+#Exercise_01 .container:hover .layout h2{
+	transition-delay: 4s;
+}
+#Exercise_01 .container:hover .layout p{
+	transition-delay: 5s;
+}
+#Exercise_01 .container:hover .layout {
+	opacity: 1;
+	transform: rotate(360deg);
+}
+#Exercise_01 .container:hover img{
+	transform: scale(1.2);
+}
+#Exercise_02 .container2{
+	background-color: transparent;
+	width: 300px;
+	height: 400px;
+	margin:auto;
+	position: relative;
+	overflow: hidden;
+}
+#Exercise_02 .container2 .front
+,#Exercise_02 .container2 .back{
+	width: 300px;
+	height: 400px;
+	transition-duration: 2s;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#Exercise_02 .container2 .front{
+	transform: rotateY(0deg);
+	background-color: #fff;
+	transition-duration: 2s;
+	backface-visibility: hidden;
+/*z-index: 1;*/
+
+}
+#Exercise_02 .container2 .front img{
+	width: 100%;
+	display: block;
+}
+#Exercise_02 .container2 .back{
+	background-color: #fff;
+	position: relative;
+	backface-visibility: hidden;
+	overflow: hidden;
+	transform: rotateY(180deg);
+}
+#Exercise_02 .container2:hover .front{
+	transform: rotateY(180deg);
+}
+#Exercise_02 .container2:hover .back{
+	transform: rotateY(0deg);
+}
+#Exercise_02 .container2 .back .layout{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0px;
+	height: 0px;
+	background-color: rgb(105, 120, 135);
+	color: #fff;
+	border-radius: 100%;
+	overflow: hidden;
+	line-height: 20px;
+}
+#Exercise_02 .container2 .back .layout h2{
+	background-color:rgb(42, 63, 85);
+}/*
+#Exercise_02 .container2 .back .layout *{
+	opacity: 0;
+}*/
+#Exercise_02 .container2:hover .back .layout{
+	width: 100%;
+	height: 100%;
+	transform: translate(-50%, -50%);
+	border-radius: 0%;
+	transition-delay: 2s;
+	transition-duration: 2s;
+	text-align: center;
+}
+#Exercise_02 .container2 .layout h2,
+#Exercise_02 .container2 .layout p{
+	transform: translateX(100%);
+}
+#Exercise_02 .container2 .layout h2{
+	padding: 20px 0px;
+	font-size: 30px;
+}
+#Exercise_02 .container2 .layout p{
+	padding: 0px 20px;
+	margin-top: 15px;
+}
+
+#Exercise_02 .container2:hover .layout h2,
+#Exercise_02 .container2:hover .layout p{
+	transform: translateX(0%);
+	transition-duration: 2s;	
+}
+#Exercise_02 .container2:hover .layout h2{
+	transition-delay: 4s;
+}
+#Exercise_02 .container2:hover .layout p{
+	transition-delay: 5s;
+}
+#Exercise_02 .container2 .layout .skill_container{
+	margin-block:20px; 
+	line-height: 44px;
+}
+#Exercise_02 .container2 .layout span{
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	color: #0f0;
+	background-color: transparent;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+#Exercise_02 .container2 .layout .skill_div {
+	margin: auto;
+	overflow: auto;
+}
+#Exercise_02 .container2 .layout .skill_div .row{
+	width: 50%;
+	float: left;
+}
+#Exercise_02 .container2 .layout .skill_div .row *{
+	width: 0;
+	height: 0;
+	margin: 0px 20%;
+	text-align: center;
+	opacity: 0;
+	margin-bottom: 40px;
+}
+
+#Exercise_02 .container2:hover .layout .skill_container span{
+	transition-delay: 6s;
+	width: 100%;
+	opacity: 1;
+	height: 100%;
+	transition-duration: 1s;
+}
+#Exercise_02 .container2:hover .layout .skill_container .row *{
+	transition-delay: 7s;
+	width: 65%;
+	opacity: 1;
+	height: 100%;
+	background-color: #0f0;
+	transition-duration: 1s;
+}
+	/*top: 0;
+	left: 0;
+	color: #fff;
+	text-align: center;
+	opacity: 0;
+	transition-duration: 2s;
+	*/

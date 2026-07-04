@@ -1,0 +1,14 @@
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+.title{
+	background-color: #09c;
+	position: relative;
+}
+.title h2{
+	text-align: center;
+	color: #fff;
+	font-size: 32px;
+}
